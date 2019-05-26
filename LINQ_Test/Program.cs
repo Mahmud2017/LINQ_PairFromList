@@ -32,6 +32,11 @@ namespace LINQ_Test
                 where l1<l2
                 select new List<TestEnum>() { l1, l2 }
                 ).ToList();
+
+            foreach(var aCombo in combo)
+            {
+                Console.WriteLine(aCombo[0] + ":" + aCombo[1]);
+            }
         }
     }
 }
